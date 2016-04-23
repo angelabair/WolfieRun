@@ -67,7 +67,7 @@
     </layer>
   </layers>
   <attributes>
-    <text id="name">startScene</text>
+    <text id="name">menuScene</text>
     <real id="time">0</real>
     <size id="size">
       <real id="width">568</real>

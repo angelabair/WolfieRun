@@ -138,6 +138,43 @@
       </behaviors>
       <elseBehaviors />
     </behavior>
+    <behavior id="id775078" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">0</index>
+        <real id="interval">0.5</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id719735" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id815874</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id815874" />
+                <string xml:space="preserve"> + 1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id159168" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id648969</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id648969" />
+                <string xml:space="preserve">+1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
   </behaviors>
   <aspects>
     <graphics>

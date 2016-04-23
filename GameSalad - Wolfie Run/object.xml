@@ -10,15 +10,18 @@ From Jamie Cross (www.jamie-cross.net &amp; www.imaginelabs.rocks)</longDescript
   <prototypes>
     <actor id="id971416" />
     <actor id="id455775" />
+    <actor id="id911195" />
     <actor id="id527905" />
     <actor id="id753266" />
-    <actor id="id911195" />
+    <actor id="id622501" />
     <actor id="id354083" />
     <actor id="id462593" />
     <actor id="id634603" />
     <actor id="id301792" />
     <actor id="id234239" />
     <actor id="id548134" />
+    <actor id="id582806" />
+    <actor id="id269003" />
   </prototypes>
   <plugins>
     <attributes id="playhaven" />
@@ -190,5 +193,6 @@ From Jamie Cross (www.jamie-cross.net &amp; www.imaginelabs.rocks)</longDescript
     <boolean id="platformConnected">true</boolean>
     <integer id="id648969" name="Score">0</integer>
     <integer id="id157975" name="highScore">0</integer>
+    <integer id="id815874" name="distance">0</integer>
   </attributes>
 </game>
