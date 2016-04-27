@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor id="id462593" PGFVersion="0.24" GSCVersion="1.24.5868">
   <attributes>
-    <text id="name">Trash Can</text>
+    <text id="name">trashCan</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -19,7 +19,7 @@
       <real id="alpha">1</real>
     </color>
     <image id="image">Trash Can</image>
-    <text id="tags">bad</text>
+    <text id="tags">Bad	Obstacles</text>
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors />
@@ -48,8 +48,8 @@
         <real id="maxSpeed">0</real>
         <boolean id="applyMaxSpeed">false</boolean>
         <point id="centerOfMass">
-          <real id="x">0.0</real>
-          <real id="y">0.0</real>
+          <real id="x">0</real>
+          <real id="y">0</real>
         </point>
       </attributes>
     </motion>

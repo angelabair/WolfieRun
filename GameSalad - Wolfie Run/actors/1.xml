@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <actor id="id971416" PGFVersion="0.24" GSCVersion="1.24.5868">
   <attributes>
-    <text id="name">Wolfie</text>
+    <text id="name">wolfie</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
@@ -28,7 +28,7 @@
         <text id="name">Collide</text>
         <text id="bundleName">Collide.behavior</text>
         <text id="prototypeKey">id455775</text>
-        <text id="actorTag">bad</text>
+        <text id="actorTag" />
         <index id="mode">0</index>
       </attributes>
     </behavior>
@@ -113,28 +113,67 @@
           <predicate type="collision">
             <attributes>
               <text id="prototypeKey">id971416</text>
-              <text id="actorTag">bad</text>
+              <text id="actorTag">Bad</text>
               <real id="mode">1</real>
             </attributes>
           </predicate>
         </condition>
       </conditions>
       <behaviors>
-        <behavior id="id841884" class="ResetSceneAction" enabled="true">
-          <attributes>
-            <text id="name">Reset Scene</text>
-            <text id="bundleName">ResetScene.behavior</text>
-            <boolean id="enableAdvertisement">true</boolean>
-          </attributes>
-        </behavior>
         <behavior id="id765391" class="DestroyAction" enabled="true">
           <attributes>
             <text id="name">Destroy</text>
             <text id="bundleName">Destroy.behavior</text>
           </attributes>
         </behavior>
+        <behavior id="id497145" class="ChangeSceneAction" enabled="true">
+          <attributes>
+            <text id="name">Change Scene</text>
+            <text id="bundleName">ChangeScene.behavior</text>
+            <text id="sceneKey">id944673</text>
+            <boolean id="enableAdvertisement">false</boolean>
+            <index id="index">1</index>
+          </attributes>
+        </behavior>
       </behaviors>
       <elseBehaviors />
+    </behavior>
+    <behavior id="id775078" class="TimerBehavior" enabled="true">
+      <attributes>
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">0</index>
+        <real id="interval">0.5</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
+      <behaviors>
+        <behavior id="id719735" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id815874</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id815874" />
+                <string xml:space="preserve"> + 1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id159168" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id648969</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id648969" />
+                <string xml:space="preserve">+1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+      </behaviors>
     </behavior>
   </behaviors>
   <aspects>
@@ -162,8 +201,8 @@
         <real id="maxSpeed">0</real>
         <boolean id="applyMaxSpeed">false</boolean>
         <point id="centerOfMass">
-          <real id="x">0.0</real>
-          <real id="y">0.0</real>
+          <real id="x">0</real>
+          <real id="y">0</real>
         </point>
       </attributes>
     </motion>

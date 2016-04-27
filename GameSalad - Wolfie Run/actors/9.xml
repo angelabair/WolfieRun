@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id634603" PGFVersion="0.24" GSCVersion="1.24.5868">
+  <attributes>
+    <text id="name">starbucks</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">1300</real>
+      <real id="height">1300</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">Starbucks</image>
+    <text id="tags">Obstacles</text>
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id725219" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id219505" eventType="overlaps or collides" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="collision">
+            <attributes>
+              <text id="prototypeKey">id971416</text>
+              <text id="actorTag" />
+              <real id="mode">0</real>
+            </attributes>
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id665696" class="DestroyAction" enabled="true">
+          <attributes>
+            <text id="name">Destroy</text>
+            <text id="bundleName">Destroy.behavior</text>
+          </attributes>
+        </behavior>
+        <behavior id="id538731" class="ConstrainAttributeBehavior" enabled="true">
+          <attributes>
+            <text id="name">Constrain Attribute</text>
+            <text id="bundleName">ConstrainAttribute.behavior</text>
+            <text id="targetAttribute" />
+            <text id="RHS" />
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors />
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">900</integer>
+        <integer id="tileHeight">900</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+        <point id="centerOfMass">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">0</real>
+        <real id="friction">0</real>
+        <real id="restitution">0</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">false</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>
